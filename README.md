@@ -11,9 +11,9 @@ Task Master Pro is a task management application enhanced with DevOps practices 
 - Java-based task management system.
 - Dockerized application for consistent deployments.
 - Kubernetes manifests for orchestration and scalability.
-- CI/CD pipelines using GitHub Actions.
+- CI/CD pipelines using GitHub Actions. Jenkins alternative is also give.
 - Infrastructure as Code (Terraform) for provisioning.
-- Monitoring and logging with Prometheus, Grafana, and ELK Stack.
+- Monitoring and logging with Prometheus, and ELK Stack.
 - Secrets management with HashiCorp Vault.
 - Vulnerability scanning with Snyk.
 
@@ -22,12 +22,12 @@ Task Master Pro is a task management application enhanced with DevOps practices 
 ## File Structure
 
 Task-Master-Pro/
-├── application/
-├── docker/
-├── kubernetes/
-├── ci-cd/
-├── infrastructure/
-├── monitoring/
-├── security/
-├── scripts/
-└── README.md
+- ├── application/
+- ├── docker/
+- ├── kubernetes/
+- ├── ci-cd/
+- ├── infrastructure/
+- ├── monitoring/
+- ├── security/
+- ├── scripts/
+- └── README.md

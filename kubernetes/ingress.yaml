@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: task-master-pro-ingress
+spec:
+  rules:
+    - host: taskmaster.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: task-master-pro-service
+                port:
+                  number: 8080

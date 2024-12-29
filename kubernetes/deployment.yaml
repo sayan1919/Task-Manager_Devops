@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task-master-pro
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: task-master-pro
+  template:
+    metadata:
+      labels:
+        app: task-master-pro
+    spec:
+      containers:
+      - name: task-master-pro
+        image: your-dockerhub/task-master-pro:latest
+        ports:
+        - containerPort: 8080
